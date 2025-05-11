@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Graphiste & Développeur</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Mes Travaux</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="contact-container">
+            <div class="card contact-form-container">
+                <div class="card__border"></div>
+                <form class="glow-form" id="contact-form" method="POST">
+                    <div class="card_title__container">
+                        <span class="card_title">Contactez-moi</span>
+                    </div>
+                    <hr class="line" />
+                    <div class="card__list">
+                        <div class="card__list_item">
+                            <input type="hidden" name="access_key" value="5375ef50-e0b9-4524-887f-7f910a0dd1a0">
+                            <label for="name">Nom :</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="card__list_item">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="card__list_item">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="button">Envoyer</button>
+                    <div id="form-response"></div>
+                </form>
+            </div>
+        </div>
+        <div class="social-icons-container">
+            <a href="https://discord.com/users/453878092373688323" target="_blank" rel="noopener noreferrer" class="social-icon neon-text">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://www.instagram.com/j0sh.psd" target="_blank" rel="noopener noreferrer" class="social-icon neon-text">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joshua-melgar-58377a294/" target="_blank" rel="noopener noreferrer" class="social-icon neon-text">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.paypal.me/J0SHpsd" target="_blank" rel="noopener noreferrer" class="social-icon neon-text">
+                <i class="fab fa-paypal"></i>
+            </a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
